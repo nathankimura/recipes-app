@@ -141,8 +141,6 @@ function FoodAndDrinkDetails({ tipoReceita, tipoFood, NameToMap, foodOrDrink }) 
             id="recomendedImg"
             src={ recomendation[`${foodOrDrink}Thumb`] }
             alt="foodOrDrinkImage"
-            width="300" // largura para deletar
-            height="300" // altura para deletar
           />
           <div id="recomendationsPosition">
             {foodOrDrink === 'strDrink'
