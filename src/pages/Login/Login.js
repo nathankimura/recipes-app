@@ -26,8 +26,9 @@ function Login() {
     localStorage.setItem('user', JSON.stringify({ email: user.email }));
     history.push('/foods');
   };
+
   return (
-    <div className="backGroundLogin">
+    <>
       <div id="logoProfile">
         <img src={ FoodLogo } alt="profile" />
       </div>
@@ -69,7 +70,7 @@ function Login() {
           Enter
         </button>
       </form>
-    </div>
+    </>
   );
 }
 export default Login;

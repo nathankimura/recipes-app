@@ -1,11 +1,9 @@
-.backGroundLogin {
-  background-color: black;
-  background-image: url('/public/planoFundoLogin.jpg');
-  background-position-x: 34%;
+html, body {
+  background-image: url('/public/1920.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
+  background-size: 100vw 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .formStyle {
@@ -45,9 +43,41 @@
 }
 
 #logoProfile {
-  padding-top: 30px;
+  align-items: center; /* centraliza verticalmente */
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  padding-top: 60px;
+}
+
+#logoProfile img {
+  height: 250px;
 }
 
 #buttonSubmit {
   color: #E7BD42;
+}
+
+@media ( max-width : 500px ) {
+
+  html, body {
+    background-image: url('/public/planoFundoLogin.jpg');
+    background-position-x: 34%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #logoProfile {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  #logoProfile img {
+    height: 100px;
+  }
+
 }
